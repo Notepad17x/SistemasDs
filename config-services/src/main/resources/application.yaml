@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  cloud: 
+    config:
+      server:
+        git:
+          default-label: gateway
+          uri: https://github.com/Notepad17x/SistemasDs
+          search-paths: config-data
+  aplication:
+    name: config-service
